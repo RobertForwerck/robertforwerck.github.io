@@ -16,15 +16,16 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/4WAiconJPG.jpg" alt="4WA Icon" /></a>
+					<a href="https://4workanswers.github.io" class="image avatar"><img src="images/4WAiconJPG.jpg" alt="4WA Icon" /></a>
 					<h1><strong>Robert J. Forwerck<br /> </strong> <br />
 					Programming Portfolio<br /><br /><br />
 					<!--crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/robert-forwerck" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://www.linkedin.com/in/robert-forwerck" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<!--<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
 					</ul>
+					
 				</div>
 			</header>
 
@@ -41,7 +42,7 @@
 						<p>A collection of my programs is found below. Each program entry is titled with the name of the programming language used followed by the title I've given to it. Please note that most of the programs exibited are held in a private repository; please email me at <b>robert.forwerck@gmail.com</b> for access</p>
 						<p>For information on the dry-cleaning application I sold called "<b>Appointments and Reminders by 4WA</b>", please click the <b>A&R - Learn More</b> button below as this application has its own web-page. </p>
 						<ul class="actions">
-							<li><a href="https://4workanswers.github.io/about" class="button">A&R - Learn More</a></li>
+							<li><a href="https://4workanswers.github.io" class="button">A&R - Learn More</a></li>
 						</ul>
 					</section>
 
@@ -52,32 +53,34 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/IssueManagerUML.jpg" class="image fit thumb"><img src="images/IssueManagerUML.jpg" alt="Issue Manager UML Picture" /></a>
 								<h3>Java - Software Issue Manager</h3>
-								<p>Manages a program's issues (bugs and enhancements) during its development life-cycle. Implements a FSM representation of issue states and transitions using <b>State Design Pattern</b>. Utilizes <b>Singleton Design Pattern</b> to allow for data persistence of the issues throughout the development life-cycle. When diligent notes are recored within this program, it serves as a well organized dedugging journal. I have made personal use of this progam for most of my development projects since its completion.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;Manages a program's issues (bugs and enhancements) during its development life-cycle. Implements a FSM representation of issue states and transitions using <b>State Design Pattern</b>. Utilizes <b>Singleton Design Pattern</b> to allow for data persistence of the issues throughout the development life-cycle. When diligent notes are recored within this program, it serves as a well organized dedugging journal. I have made personal use of this progam for most of my development projects since its completion.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/LeaseManagerPic.jpg" class="image fit thumb"><img src="images/LeaseManagerPic.jpg" alt="Lease Manager GUI Picture" /></a>
 								<h3>Java - Lease Manager</h3>
-								<p>Manages a set of rental-units, clients, and their associated leases. Includes 22 classes, 4 interfaces, and all custom data structures developed through <b>Test-Driven-Development</b>. Utilizes the <b>Singleton and Factory Design Patterns</b> in the highest level client class of the model.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;Manages a set of rental-units, clients, and their associated leases. Includes 22 classes, 4 interfaces, and all custom data structures developed through <b>Test-Driven-Development</b>. Utilizes the <b>Singleton and Factory Design Patterns</b> in the highest level client class of the model.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>To do</h3>
-								<p>To do.</p>
+								<a href="images/fulls/InflateDeflateMakefile.jpg" class="image fit thumb"><img src="images/InflateDeflateMakefile.jpg" alt="" /></a>
+								<h3>C - Deflate and Inflate</h3>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;This is actually a pair of programs that work in tandem to compress and decompress text files. To acheive compression of files, these programs employ the Huffman coding technique which assigns commonly used characters to bit strings with few bits and rarely used characters to bitstrings of greater than 8 bits. For example, the space character, since it is commonly used, could be represented as 2 bits instead of the normal 8. This allows for very effective compression of file size for text files that consist of mostly letters and spaces.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;These programs utilize two components - a cipher and a filebuffer. The cipher stores 256 variable-length bit codes to represent all 256 characters and has a funtion to return a variable-length code and another function to lookup the decimal value cooresponding to a variable-length code so that the code can be converted to it's usual character byte value. The filebuffer uses a bit-field within a struct to accumulate a sequence of bits to be printed to a file. For the inflate program, this bit-field holds a sequence of the usual byte values of the characters from the input file. For the deflate program, it holds a sequence of variable-length bit codes.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;The picture above show the makefile for these two programs.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>To do</h3>
-								<p>To do.</p>
+								<a href="images/fulls/project4structs.jpg" class="image fit thumb"><img src="images/project4structs.jpg" alt="" /></a>
+								<h3>C - Book Sales Tracker</h3>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;The Book Sales Tracker program doesn't do what you think it does. Just kidding, it does exactly what you think it does. It accounts for a set of books and sales-people and keeps track of the books sold by each sales-person. This program is sort of like the movie Inception except instead of dealing with dreams it deals with structs. It is organized with a group struct which holds two lists of pointers; in one list each pointer points to a book struct, and in the other list each pointer points to a salesperson struct. Within each salesperson struct a linked list exists which is composed of a node for each book that the sales-person has sold. Within each node there is a pointer to one of the books loaded within the group struct's book List and a field to keep track of the number of that book sold by the salesperson. Did I explain that well? If not, I included a chart in the picture above that helps to show what's going on.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>To do</h3>
-								<p>To do.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;To do.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>To do</h3>
-								<p>To do.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;To do.</p>
 							</article>
 						</div>
 						<ul class="actions">
@@ -103,6 +106,7 @@
 								</ul>
 							</div>-->
 							<div class="col-4 col-12-small">
+								<p><b><u>Please email me for Github access:</u></b></p>
 								<ul class="labeled-icons">
 									<!--<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
