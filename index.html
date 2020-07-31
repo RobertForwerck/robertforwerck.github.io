@@ -25,7 +25,7 @@
 						<li><a href="https://www.linkedin.com/in/robert-forwerck" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<!--<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
 					</ul>
-					
+					<h6>Please request for Github access.</h6>
 				</div>
 			</header>
 
@@ -65,7 +65,7 @@
 								<h3>C - Deflate and Inflate</h3>
 								<p>&nbsp;&nbsp;&nbsp;&nbsp;This is actually a pair of programs that work in tandem to compress and decompress text files. To acheive compression of files, these programs employ the Huffman coding technique which assigns commonly used characters to bit strings with few bits and rarely used characters to bitstrings of greater than 8 bits. For example, the space character, since it is commonly used, could be represented as 2 bits instead of the normal 8. This allows for very effective compression of file size for text files that consist of mostly letters and spaces.</p>
 								<p>&nbsp;&nbsp;&nbsp;&nbsp;These programs utilize two components - a cipher and a filebuffer. The cipher stores 256 variable-length bit codes to represent all 256 characters and has a funtion to return a variable-length code and another function to lookup the decimal value cooresponding to a variable-length code so that the code can be converted to it's usual character byte value. The filebuffer uses a bit-field within a struct to accumulate a sequence of bits to be printed to a file. For the inflate program, this bit-field holds a sequence of the usual byte values of the characters from the input file. For the deflate program, it holds a sequence of variable-length bit codes.</p>
-								<p>&nbsp;&nbsp;&nbsp;&nbsp;The picture above show the makefile for these two programs.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;The picture above shows the makefile for these two programs.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/project4structs.jpg" class="image fit thumb"><img src="images/project4structs.jpg" alt="" /></a>
